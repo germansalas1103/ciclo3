@@ -1,0 +1,15 @@
+.div-cabecera {
+    width: 100%;
+    height: 380px;
+}
+
+.img-cabecera {
+    background-image: url('https://cdn.pixabay.com/photo/2021/09/09/12/26/salvador-dali-mask-6610444_960_720.jpg');
+    height: 100%; 
+
+    /*parallax*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

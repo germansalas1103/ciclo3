@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disfraces</title>
-    <link href="styles.css" rel="stylesheet">
+    <title>Clientesx</title>
     <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="js/funciones.js"></script>
@@ -23,75 +22,62 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" onclick="consultarDisfraz()" href="Index.html" >Disfraces <span class="sr-only"></span></a>
-                <a class="nav-item nav-link" href="client.html">Clientes</a>
+                <a class="nav-item nav-link" href="Index.html" onclick="consultar()">Disfraces <span class="sr-only"></span></a>
+                <a class="nav-item nav-link active" href="client.html">Clientes</a>
                 <a class="nav-item nav-link" href="message.html">Mensajes</a>
             </div>
         </div>
     </nav>
-
-    <div class="row">
-        <div class="container">
-            <div class="div-cabecera">
-                <div class="img-cabecera">
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     </br>
     
     <div class="container">
         <div class="row">
             <div class="form-floating mb-2 col-md-1">
-                <input type="" class="form-control" id="idCostume" placeholder="">
+                <input type="" class="form-control" id="idClient" placeholder="">
                 <label for="floatingInput">ID</label>
             </div>
 
-            <div class="form-floating mb-2 col-md-4">
-                <input type="" class="form-control" id="brand" placeholder="">
-                <label for="floatingInput">Marca</label>
+            <div class="form-floating mb-2 col-md-9">
+                <input type="" class="form-control" id="clientName" placeholder="">
+                <label for="floatingInput">Nombre</label>
             </div>
 
-            <div class="form-floating mb-2 col-md-4">
-                <input type="" class="form-control" id="model" placeholder="">
-                <label for="floatingInput">Modelo</label>
-            </div>
-
-            <div class="form-floating mb-2 col-md-3">
-                <input type="" class="form-control" id="categoryId" placeholder="">
-                <label for="floatingInput">Categoría ID</label>
+            <div class="form-floating mb-2 col-md-2">
+                <input type="" class="form-control" id="clientAge" placeholder="">
+                <label for="floatingInput">Edad</label>
             </div>            
         </div>
 
         <div class="row">
             <div class="form-floating mb-2 col-md-12">
-                <input type="" class="form-control" id="name" placeholder="">
-                <label for="floatingInput">Nombre</label>
+                <input type="" class="form-control" id="clientEmail" placeholder="">
+                <label for="floatingInput">E-Mail</label>
             </div>
         </div>
     </div>
 
-    </br>
+</br>
 
     <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-primary" onclick="insertardisfraz()">Insertar</button>          
-                    <button type="button" class="btn btn-primary" onclick="borrarDisfraz()">Borrar</button>
-                    <button type="button" class="btn btn-primary" onclick="actualizarDisfraz()">Actualizar</button>
+                    <button type="button" class="btn btn-primary" onclick="insertarCliente()">Insertar</button>          
+                    <button type="button" class="btn btn-primary" onclick="borrarCliente()">Borrar</button>
+                    <button type="button" class="btn btn-primary" onclick="actualizarCliente()">Actualizar</button>
                 </div>
             </div>
         </div>
     </div>
-    
-    </br>
+
+</br>
 
     <div class="container">
-        <div class="row" id="idDivConsulta">         
+        <div class="row" id="divClientes">
         </div>
     </div>
+
+
 </body>
 </html>

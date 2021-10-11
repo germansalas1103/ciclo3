@@ -1,0 +1,1 @@
+ misItems[i].id + " " + misItems[i].brand + " " + misItems[i].model + " " + misItems[i].category_id + " " + misItems[i].name + " "
